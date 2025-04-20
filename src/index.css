@@ -1,0 +1,38 @@
+/*------------------------------------------------Importações*/
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+/*------------------------------------------------Estilizações Gerais*/
+*, body, html, ul, li, a, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: SUSE;
+}
+
+a {
+    color: var(--branco);
+}
+
+:root {
+    --ciano:       #6ee2ff;
+    --azul-medio:  #15202c;
+    --azul-escuro: #081825;
+    --branco:      #ffffff;
+    --cinza-medio: #ffffff28;
+    --laranja:     #F97B22;
+    --verde:       #25d366;
+    --preto:       #000000;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: SUSE;
+    color: var(--branco);
+    background-color: var(--azul-medio);
+    min-height: 100dvh;
+    
+}
