@@ -1,0 +1,136 @@
+#section-home {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wellcome {
+    text-transform: uppercase;
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    max-width: 30rem;
+    margin: auto;
+    padding: 1rem;
+    height: 80dvh;
+
+}
+.wellcome1 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: right;
+}
+.wellcome2 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.arrow-down svg {
+    height: 2rem;
+    color: var(--branco);
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container h2{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.about-container p a {
+    text-decoration: underline;
+}
+
+h3 {
+    border-bottom: none;
+}
+
+.about-container {
+    padding: 1rem;
+    width: 100%;
+    color: var(--branco);
+    background: var(--azul-escuro);
+    
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50rem;
+    margin: auto;
+    padding: 1rem;
+    gap: 1rem;
+    background: url('../assets/lendo.png') no-repeat left center;
+    background-size: contain;
+
+}
+
+.about-me h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+}
+.about-me p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.about-me-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.about-me-links a {
+    color: var(--ciano);
+    background: var(--azul-medio);
+    border: 2px solid var(--cinza-medio);
+    padding: 1rem 0;
+    border-radius: .5rem;
+    width: 9rem;
+}
+
+.about-me-links a:hover {
+    background-color: var(--cinza-medio);
+}
+
+#more-about {
+    text-align: center;
+}
+
+@media screen and (max-width: 730px) {
+    .about-me p {
+        font-size: 1.2rem;
+    }
+    .about-me h3 {
+        font-size: 1.8rem;
+    }
+}

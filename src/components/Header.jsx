@@ -20,7 +20,7 @@ export const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/experience" className={({ isActive }) => (isActive ? 'active' : '')}>
+                            <NavLink to="/experiences" className={({ isActive }) => (isActive ? 'active' : '')}>
                                 Experiências
                             </NavLink>
                         </li>
