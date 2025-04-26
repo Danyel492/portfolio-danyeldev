@@ -6,6 +6,7 @@ import { Home } from './pages/home'; // Certifique-se de importar o componente H
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
+import { Projects } from './pages/projects';
 
 function App() {
     const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -34,6 +35,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             {showScrollToTop && (
