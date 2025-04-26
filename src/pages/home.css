@@ -18,6 +18,7 @@
     margin: auto;
     padding: 1rem;
     height: 80dvh;
+    
 
 }
 .wellcome1 {
@@ -126,6 +127,29 @@ h3 {
     text-align: center;
 }
 
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+.skills-container h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.skills-container span {
+    font-weight: 100;
+}
+
+.skills-container span:hover {
+    cursor: default;
+}
+
+
 @media screen and (max-width: 730px) {
     .about-me p {
         font-size: 1.2rem;
@@ -133,4 +157,12 @@ h3 {
     .about-me h3 {
         font-size: 1.8rem;
     }
+    .about-me-links a {
+        width: 7rem;
+    }
+
 }
+
+/* #section-home article:first-child {
+    border: 1px solid red;
+} */

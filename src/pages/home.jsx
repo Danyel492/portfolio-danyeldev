@@ -2,7 +2,7 @@ import './home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'
-import ImgLendo from './../assets/lendo.png'
+import { HardSkills } from '../components/HardSkills';
 
 export const Home = () => {
     return (
@@ -17,7 +17,6 @@ export const Home = () => {
                             <span className="wellcome2">
                                 bem-vindos
                             </span>
-                            <div ></div>
                             <div className="arrow-down">
                                 <a href="#about"><FontAwesomeIcon icon={faChevronDown} /></a>
                             </div>
@@ -45,12 +44,25 @@ export const Home = () => {
                                 <div className='about-me-links'>
                                     <Link to='/projects'>Projetos</Link>
                                     <Link to='/experiences'>Experiências</Link>
+                                    <Link to='https://drive.google.com/file/d/1fQyafP-zAHl2BPuyR1_VWfDhJBeiitWF/view?usp=sharing' target='_brank'>CV</Link>
                                 </div>
                             </div>
                             <div className="arrow-down">
                                 {/* <a href="#about"><FontAwesomeIcon icon={faChevronDown} /></a> */}
                             </div>
                         </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div className='skills-container'>
+
+                        <h2>Skills</h2>
+
+                        <div>
+                            <HardSkills />
+                        </div>
+
                     </div>
                 </article>
 
