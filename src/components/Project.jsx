@@ -33,7 +33,7 @@ const projects = [
         tecnologias: ["React", "Context API", "Fetch API", "CSS", "API"],
         linkRepositorio: "https://github.com/Danyel492/pokedex-project",
         linkOnline: "https://pokedex-project-chi.vercel.app/",
-    },
+    }
 ];
 
 const Project = () => {

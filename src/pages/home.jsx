@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'
 import { HardSkills } from '../components/HardSkills';
+import { MatrixEffect } from '../components/MatrixEffect';
 
 export const Home = () => {
     return (
@@ -10,6 +11,7 @@ export const Home = () => {
             <section id='section-home'>
                 <article>
                     <div>
+                     <MatrixEffect /> {/*Esse matrix efect importei pronto */}
                         <div className='wellcome'>
                             <span className="wellcome1">
                                 sejam todos

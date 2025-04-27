@@ -133,9 +133,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 0;
+    padding-top: 1rem 0;
+    background-color: var(--azul-medio);
 }
 .skills-container h2 {
+    margin-top: 1.5rem;
     text-transform: uppercase;
     font-weight: 100;
     font-size: 2rem;
