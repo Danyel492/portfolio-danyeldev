@@ -33,6 +33,13 @@ const projects = [
         tecnologias: ["React", "Context API", "Fetch API", "CSS", "API"],
         linkRepositorio: "https://github.com/Danyel492/pokedex-project",
         linkOnline: "https://pokedex-project-chi.vercel.app/",
+    }, {
+        nome: "Registro de Tarefas",
+        imagem: "./../assets/thumbnail/tnRegistro.png",
+        descricao: "Aplicação desenvolvida para atender a necessidade de registrar as tarefas realizadas pelos funcionários durante o expediente, gerando relatórios para os supervisores ao final do dia. Apesar de existirem soluções prontas no mercado, optei por criar esta aplicação para aprimorar minhas habilidades de programação.",
+        tecnologias: ["HTML", "CSS", "JavaScript", "DOM"],
+        linkRepositorio: "https://github.com/Danyel492/registro_tarefas",
+        linkOnline: "https://danyel492.github.io/registro_tarefas/",
     }
 ];
 
