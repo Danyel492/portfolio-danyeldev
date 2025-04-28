@@ -40,6 +40,13 @@ const projects = [
         tecnologias: ["HTML", "CSS", "JavaScript", "DOM"],
         linkRepositorio: "https://github.com/Danyel492/registro_tarefas",
         linkOnline: "https://danyel492.github.io/registro_tarefas/",
+    }, {
+        nome: "Calculadora",
+        imagem: "./../assets/thumbnail/tnCalculadora.png",
+        descricao: "Uma aplicação de calculadora simples e funcional desenvolvida para realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão. Este projeto foi criado com o objetivo de praticar manipulação do DOM e lógica de programação utilizando JavaScript, HTML e CSS.",
+        tecnologias: ["HTML", "CSS", "JavaScript", "DOM"],
+        linkRepositorio: "https://github.com/Danyel492/calculadora",
+        linkOnline: "https://calculadora-tan.vercel.app/",
     }
 ];
 
