@@ -20,11 +20,6 @@ export const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/experiences" className={({ isActive }) => (isActive ? 'active' : '')}>
-                                Experiências
-                            </NavLink>
-                        </li>
-                        <li>
                             <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
                                 Contato
                             </NavLink>

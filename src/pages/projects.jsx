@@ -5,7 +5,7 @@ import './projects.css'
 export const Projects = () => {
     return (
         <div className="projects-container">
-            <h1>Projetos</h1>
+            <h2>Projetos</h2>
             <Project />
         </div>
     );

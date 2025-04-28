@@ -36,11 +36,12 @@ const projects = [
     }
 ];
 
-const Project = () => {
+const Project = ({ limit }) => {
+    const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
     return (
         <div className="component-projects-container">
-            {projects.map((project, index) => (
+            {displayedProjects.map((project, index) => (
                 <div className="container-project" key={index}>
                     <div>
                         <div className="banner-project" onClick={() => openModal(project)}>
@@ -54,7 +55,7 @@ const Project = () => {
                         <p>{project.descricao}</p>
                     </div>
                     <div>
-                        <p className="technologies">
+                        <div className="technologies">
                             <strong>Tecnologias:</strong>
                             <div className="tech-list">
                                 {project.tecnologias.map((tech, techIndex) => (
@@ -63,7 +64,7 @@ const Project = () => {
                                     </span>
                                 ))}
                             </div>
-                        </p>
+                        </div>
                         <p className="btn-links">
                             <a href={project.linkRepositorio} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faCode} /> Repositório

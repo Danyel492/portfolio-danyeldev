@@ -94,3 +94,11 @@ a:hover {
     background-color:#008000;
     cursor: pointer;
 }
+
+.contact a svg {
+    width: 1.2rem;
+}
+.contact a {
+    border-bottom: 1px solid var(--ciano);
+    color: var(--ciano);
+}

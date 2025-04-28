@@ -1,17 +1,18 @@
 import './home.css'
+import './projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'
 import { HardSkills } from '../components/HardSkills';
-import { MatrixEffect } from '../components/MatrixEffect';
-
+import Project from '../components/Project';
 export const Home = () => {
+
     return (
         <main>
             <section id='section-home'>
                 <article>
                     <div>
-                     <MatrixEffect /> {/*Esse matrix efect importei pronto */}
+
                         <div className='wellcome'>
                             <span className="wellcome1">
                                 sejam todos
@@ -44,8 +45,15 @@ export const Home = () => {
                                     Pode conferir um pouco mais do meu trabalho atravez dos links abaixo:
                                 </p>
                                 <div className='about-me-links'>
-                                    <Link to='/projects'>Projetos</Link>
-                                    <Link to='/experiences'>Experiências</Link>
+                                    <a
+                                        href="#projects"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+                                        }}
+                                    >
+                                        Projetos
+                                    </a>
                                     <Link to='https://drive.google.com/file/d/1fQyafP-zAHl2BPuyR1_VWfDhJBeiitWF/view?usp=sharing' target='_brank'>CV</Link>
                                 </div>
                             </div>
@@ -68,8 +76,12 @@ export const Home = () => {
                     </div>
                 </article>
 
-                <article id='more-about'>
-                    <p>..em breve, um pouco mais sobre mim.</p>
+                <article id="projects" className='projects-container'>
+                    <h2>Projetos</h2>
+                    <Project limit={4} />
+                    <div className="projects-links">
+                        <Link to="/projects">Ver todos os projetos</Link>
+                    </div>
                 </article>
             </section>
         </main>

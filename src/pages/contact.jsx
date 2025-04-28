@@ -1,6 +1,6 @@
 import './contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 
@@ -69,7 +69,8 @@ export const Contact = () => {
                     <div>
                         <p>Se quiser conhecer um pouco mais da minha trajetória, conquistas e conexões, dá uma olhada no meu perfil no LinkedIn!</p>
                         <span>
-                            <a href="https://www.linkedin.com/in/danyeldev/" target='_blank'>in/danyeldev</a>
+                            <a href="https://www.linkedin.com/in/danyeldev/" target='_blank'>
+                            <FontAwesomeIcon icon={faLink} /> in/danyeldev</a>
                         </span>
                         <p>Estou sempre aberto a boas conversas e oportunidades.</p>
                     </div>
@@ -83,7 +84,8 @@ export const Contact = () => {
                         Curioso pra ver meus projetos? No meu GitHub você encontra o que venho codando por aí
                         </p>
                         <span>
-                            <a href="https://github.com/Danyel492" target='_blank'>@Danyel492</a>
+                            <a href="https://github.com/Danyel492" target='_blank'>
+                            <FontAwesomeIcon icon={faLink} /> @Danyel492</a>
                         </span>
                     </div>
                 </div>

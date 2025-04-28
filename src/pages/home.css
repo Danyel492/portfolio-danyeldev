@@ -104,13 +104,16 @@ h3 {
     margin-bottom: 2rem;
 }
 
-.about-me-links {
+.about-me-links, .projects-links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
 }
-.about-me-links a {
+.projects-links {
+    margin-bottom: 1rem;
+}
+.about-me-links a, .projects-links a {
     color: var(--ciano);
     background: var(--azul-medio);
     border: 2px solid var(--cinza-medio);
@@ -118,11 +121,14 @@ h3 {
     border-radius: .5rem;
     width: 9rem;
 }
-
-.about-me-links a:hover {
-    background-color: var(--cinza-medio);
+.projects-links a {
+    width: 11rem;
+    text-align: center;
 }
 
+.about-me-links a:hover, .projects-links a:hover {
+    background-color: var(--cinza-medio);
+}
 #more-about {
     text-align: center;
 }
@@ -164,7 +170,6 @@ h3 {
     }
 
 }
-
 /* #section-home article:first-child {
     border: 1px solid red;
 } */
