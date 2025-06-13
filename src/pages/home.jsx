@@ -54,7 +54,7 @@ export const Home = () => {
                                     >
                                         Projetos
                                     </a>
-                                    <Link to='https://drive.google.com/file/d/1fQyafP-zAHl2BPuyR1_VWfDhJBeiitWF/view?usp=sharing' target='_brank'>CV</Link>
+                                    <Link to='https://drive.google.com/file/d/19tvlDO0vXj140yy-fXLlSBKuwFmY7pCX/view?usp=drive_link' target='_brank'>CV</Link>
                                 </div>
                             </div>
                             <div className="arrow-down">
