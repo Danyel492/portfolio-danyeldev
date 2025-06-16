@@ -1,7 +1,7 @@
-import React from "react";
 import './Project.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeSlash, faCode } from '@fortawesome/free-solid-svg-icons';
+import { Tooltip } from 'react-tooltip';
 
 const projects = [
     {
@@ -10,7 +10,7 @@ const projects = [
         descricao: "Sistema completo gerenciamento de conteúdo que permite aos usuários criar, editar, visualizar e excluir postagens, além de funcionalidades exclusivas para administradores, como gerenciamento de usuários e moderação de conteúdo. O backend foi construído com Node.js, Express e MongoDB, enquanto o frontend utiliza React.js e Vite para uma interface moderna, responsiva e interativa. O projeto inclui autenticação de usuários, controle de permissões, design responsivo e integração total entre frontend e backend.",
         tecnologias: ["React", "JavaScript", "Express", "Vite", "MongoDB", "Node.js", "API", "JWT", "CSS"],
         linkRepositorio: "https://github.com/Danyel492/cms",
-        linkOnline: "http://cms.danyeldev.com/",
+        linkOnline: "",
     },
     {
         nome: "Cadastro de Interesse",
@@ -53,6 +53,8 @@ const projects = [
 const Project = ({ limit }) => {
     const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
+    const tooltipText = "O projeto está offline para manutenção ou devido a recursos de hospedagem."
+
     return (
         <div className="component-projects-container">
             {displayedProjects.map((project, index) => (
@@ -79,14 +81,33 @@ const Project = ({ limit }) => {
                                 ))}
                             </div>
                         </div>
-                        <p className="btn-links">
+                        <div className="btn-links">
                             <a href={project.linkRepositorio} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faCode} /> Repositório
                             </a>
-                            <a href={project.linkOnline} target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faGlobe} /> Online
-                            </a>
-                        </p>
+                            {project.linkOnline ? (
+                                <a href={project.linkOnline} target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faEye} /> Online
+                                </a>
+                            ) : (
+                                <>
+                                    <a
+                                        id={`offline-tooltip-${index}`}
+                                        className="link-offline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <FontAwesomeIcon icon={faEyeSlash} /> Offline
+                                    </a>
+                                    <Tooltip
+                                        anchorSelect={`#offline-tooltip-${index}`}
+                                        place="top"
+                                        content={tooltipText}
+                                        className="tooltip"
+                                    />
+                                </>
+                            )}
+                        </div>
                     </div>
                 </div>
             ))}
