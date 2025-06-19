@@ -10,7 +10,7 @@ const projects = [
         descricao: "Sistema completo gerenciamento de conteúdo que permite aos usuários criar, editar, visualizar e excluir postagens, além de funcionalidades exclusivas para administradores, como gerenciamento de usuários e moderação de conteúdo. O backend foi construído com Node.js, Express e MongoDB, enquanto o frontend utiliza React.js e Vite para uma interface moderna, responsiva e interativa. O projeto inclui autenticação de usuários, controle de permissões, design responsivo e integração total entre frontend e backend.",
         tecnologias: ["React", "JavaScript", "Express", "Vite", "MongoDB", "Node.js", "API", "JWT", "CSS"],
         linkRepositorio: "https://github.com/Danyel492/cms",
-        linkOnline: "",
+        linkOnline: "https://cms.danyeldev.com",
     },
     {
         nome: "Cadastro de Interesse",
